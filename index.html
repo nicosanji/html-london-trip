@@ -1,17 +1,71 @@
-<!DOCTYPE html> <!-- dichiaro al browser tipo di documento e linguaggio che uso -->
-<html lang="en"> <!-- attributo lang di html indica in che lingua sarà la pagina -->
+<!DOCTYPE html> <!--dichiaro al browser tipo di documento e linguaggio che uso-->
+<html lang="en"> <!--attributo lang di html indica in che lingua sarà la pagina-->
 
-<head> <!-- in questo cont. si inseriscono i "metadati html" sul documento, NON SI VEDE; 
-            "metadati html" = titolo documento, set di caratteri, stili, script ... -->
-    <meta charset="utf-8"> <!-- charset specifica la codifica dei caratteri per il
-                                documento html, "utf-8" è ottimo per html5 -->
-    <title> I &#10084;&#65039; LONDON </title> <!-- è il nome della pagina, SI VEDE -->
+<head> <!--in questo cont. si inseriscono i "metadati html" sul documento, NON SI VEDE*."metadati html" = titolo documento, set di caratteri, stili, script ...-->
+    <meta charset="utf-8"> <!--charset specifica la codifica dei caratteri per il documento html, "utf-8" è ottimo per html5-->
+    <title> I &#10084;&#65039; LONDON </title> <!--è il nome della pagina, *SI VEDE-->
 </head>
 
-<body>
+<body> <!--in questo div va TUTTO il contenuto della ns. pagina-->
     
-    <header></header>
-    <main></main>
+    <header> <!--la TESTA/TESTATA della pagina, il "TITOLONE" e a volte altro (nav, ecc...)-->
+        <h1>Il mio Viaggio a Londra</h1>
+    </header>
+
+    <main> <!--il CONTENUTO PRINCIPALE della pagina, che comprende 5 sezioni-->
+
+        <section> <!--1^ SECTION del contenuto MAIN, le SECTION sono appunto sezioni o parti divisibili del contenuto-->
+            <img src="img\pexels-bill-emrich-230794-0.jpg" alt="London skyline 1/3">
+            <img src="img\pexels-bill-emrich-230794-1.jpg" alt="London skyline 2/3">
+            <img src="img\pexels-bill-emrich-230794-2.jpg" alt="London skyline 3/3">
+        </section> <!--chiudo prima sect. con 3 immagini in riga (acnhe se scritte in colonna)-->
+        
+        <hr> <!--RIGA nera orizzontale, in questo caso (secondo me) divide le sezioni-->
+       
+        <section> <!--2^ SECTION del contenuto MAIN, con 1 titolo e 1 tabella-->
+            <h2>Le mie spese</h2>
+            <table> <!--creo una TABELLA-->
+                <thead> <!--INTESTAZIONE della tabella-->
+                    <tr> <!--la prima riga della tabella-->
+                        <th><strong>Numero</strong></th> <!--th è una cella, vale per solo per thead-->
+                        <th><strong>Descrizione</strong></th>
+                        <th><strong>Costo</strong></th>
+                    </tr> <!--il n° di th definisce il numero delle colonne e il loro ordine-->
+                </thead>
+                <tbody> <!--contenuto PRINCIPALE della tabella-->
+                    <tr> <!--1^ riga-->
+                        <td>1</td> <!--td è una cella, vale per tbody e tfoot-->
+                        <td>Biglietto Aereo</td>
+                        <td>120€</td>
+                    </tr>
+                    <tr> <!--2^riga-->
+                        <td>1</td>
+                        <td>Biglietto Aereo</td>
+                        <td>120€</td>
+                    </tr>
+                    <tr> <!--3^ riga-->
+                        <td>1</td>
+                        <td>Biglietto Aereo</td>
+                        <td>120€</td>
+                    </tr>
+                </tbody>
+                <tfoot> <!--parte finale della tabella (con risultati, ecc...)-->
+                    <tr>
+                        <td>Totale</td>
+                        <td></td> <!--cella vuota-->
+                        <td>360€</td>  
+                    </tr>
+                </tfoot>
+            </table>
+        </section> <!--chiusura della sezione "le mie spese" + tabella-->
+        <hr>
+        <section> <!--3^ SECTION con titolo e lista non ordinata "ul"-->
+            
+
+        </section>
+
+    </main>
+
     <footer></footer>
 </body>
 
