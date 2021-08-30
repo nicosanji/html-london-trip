@@ -1,72 +1,148 @@
-<!DOCTYPE html> <!--dichiaro al browser tipo di documento e linguaggio che uso-->
-<html lang="en"> <!--attributo lang di html indica in che lingua sarà la pagina-->
+<!DOCTYPE html>
+<!--dichiaro al browser tipo di documento e linguaggio che uso-->
+<html lang="en">
+<!--attributo lang di html indica in che lingua sarà la pagina-->
 
-<head> <!--in questo cont. si inseriscono i "metadati html" sul documento, NON SI VEDE*."metadati html" = titolo documento, set di caratteri, stili, script ...-->
-    <meta charset="utf-8"> <!--charset specifica la codifica dei caratteri per il documento html, "utf-8" è ottimo per html5-->
-    <title> I &#10084;&#65039; LONDON </title> <!--è il nome della pagina, *SI VEDE-->
+<head>
+    <!--in questo cont. si inseriscono i "metadati html" sul documento, NON SI VEDE*."metadati html" = titolo documento, set di caratteri, stili, script ...-->
+    <meta charset="utf-8">
+    <!--charset specifica la codifica dei caratteri per il documento html, "utf-8" è ottimo per html5-->
+    <title> I &#10084;&#65039; LONDON </title>
+    <!--è il nome della pagina, *SI VEDE-->
 </head>
 
-<body> <!--in questo div va TUTTO il contenuto della ns. pagina-->
-    
-    <header> <!--la TESTA/TESTATA della pagina, il "TITOLONE" e a volte altro (nav, ecc...)-->
+<body>
+    <!--in questo div va TUTTO il contenuto della ns. pagina-->
+
+    <header>
+        <!--la TESTA/TESTATA della pagina, il "TITOLONE" e a volte altro (nav, ecc...)-->
         <h1>Il mio Viaggio a Londra</h1>
     </header>
 
-    <main> <!--il CONTENUTO PRINCIPALE della pagina, che comprende 5 sezioni-->
+    <main>
+        <!--il CONTENUTO PRINCIPALE della pagina, che comprende 5 sezioni-->
 
-        <section> <!--1^ SECTION del contenuto MAIN, le SECTION sono appunto sezioni o parti divisibili del contenuto-->
-            <img src="img\pexels-bill-emrich-230794-0.jpg" alt="London skyline 1/3">
-            <img src="img\pexels-bill-emrich-230794-1.jpg" alt="London skyline 2/3">
-            <img src="img\pexels-bill-emrich-230794-2.jpg" alt="London skyline 3/3">
-        </section> <!--chiudo prima sect. con 3 immagini in riga (acnhe se scritte in colonna)-->
-        
-        <hr> <!--RIGA nera orizzontale, in questo caso (secondo me) divide le sezioni-->
-       
-        <section> <!--2^ SECTION del contenuto MAIN, con 1 titolo e 1 tabella-->
+        <section>
+            <!--1^ SECTION del contenuto MAIN, le SECTION sono appunto sezioni o parti divisibili del contenuto-->
+            <img src="img\pexels-bill-emrich-230794-0.jpg" alt="foto London skyline 1/3">
+            <img src="img\pexels-bill-emrich-230794-1.jpg" alt="foto London skyline 2/3">
+            <img src="img\pexels-bill-emrich-230794-2.jpg" alt="foto London skyline 3/3">
+        </section>
+        <!--chiudo prima sect. con 3 immagini in riga (acnhe se scritte in colonna)-->
+
+        <hr>
+        <!--RIGA nera orizzontale, in questo caso (secondo me) divide le sezioni-->
+
+        <section>
+            <!--2^ SECTION del contenuto MAIN, con 1 titolo e 1 tabella-->
             <h2>Le mie spese</h2>
-            <table> <!--creo una TABELLA-->
-                <thead> <!--INTESTAZIONE della tabella-->
-                    <tr> <!--la prima riga della tabella-->
-                        <th><strong>Numero</strong></th> <!--th è una cella, vale per solo per thead-->
+            <table>
+                <!--creo una TABELLA-->
+                <thead>
+                    <!--INTESTAZIONE della tabella-->
+                    <tr>
+                        <!--la prima riga della tabella-->
+                        <th><strong>Numero</strong></th>
+                        <!--th è una cella, vale per solo per thead-->
                         <th><strong>Descrizione</strong></th>
                         <th><strong>Costo</strong></th>
-                    </tr> <!--il n° di th definisce il numero delle colonne e il loro ordine-->
+                    </tr>
+                    <!--il n° di th definisce il numero delle colonne e il loro ordine-->
                 </thead>
-                <tbody> <!--contenuto PRINCIPALE della tabella-->
-                    <tr> <!--1^ riga-->
-                        <td>1</td> <!--td è una cella, vale per tbody e tfoot-->
+                <tbody>
+                    <!--contenuto PRINCIPALE della tabella-->
+                    <tr>
+                        <!--1^ riga-->
+                        <td>1</td>
+                        <!--td è una cella, vale per tbody e tfoot-->
                         <td>Biglietto Aereo</td>
                         <td>120€</td>
                     </tr>
-                    <tr> <!--2^riga-->
+                    <tr>
+                        <!--2^riga-->
                         <td>1</td>
                         <td>Biglietto Aereo</td>
                         <td>120€</td>
                     </tr>
-                    <tr> <!--3^ riga-->
+                    <tr>
+                        <!--3^ riga-->
                         <td>1</td>
                         <td>Biglietto Aereo</td>
                         <td>120€</td>
                     </tr>
                 </tbody>
-                <tfoot> <!--parte finale della tabella (con risultati, ecc...)-->
+                <tfoot>
+                    <!--parte finale della tabella (con risultati, ecc...)-->
                     <tr>
                         <td>Totale</td>
-                        <td></td> <!--cella vuota-->
-                        <td>360€</td>  
+                        <td></td>
+                        <!--cella vuota-->
+                        <td>360€</td>
                     </tr>
                 </tfoot>
             </table>
-        </section> <!--chiusura della sezione "le mie spese" + tabella-->
-        <hr>
-        <section> <!--3^ SECTION con titolo e lista non ordinata "ul"-->
-            
+        </section>
+        <!--chiusura della sezione "le mie spese" + tabella-->
 
+        <hr>
+
+        <section>
+            <!--3^ SECTION con titoletto e lista non ordinata "ul"-->
+            <h3>Cose da fare</h3>
+            <ul>
+                <!--lista non ordinata (non numerata) comprendente vari "li"-->
+                <li>Visitare la Tower of London &#10008;</li>
+                <!--"&#10004;"" è un carattere speciale-->
+                <li>Visitare Greenwich &#10004;</li>
+                <li>Ascoltare un artista di strada a Covent Garden &#10004;</li>
+                <li>Mangiare il tipico Fish and Chips inglese &#10008;</li>
+            </ul>
         </section>
 
+        <hr>
+
+        <section>
+            <!-- 4^ SECTION con titoletto e delle "ul" all'interno di una "ol"-->
+            <h3>Info utili:</h3>
+            <ol>
+                <li>
+                    Numeri utili di emergenza
+                    <ul>
+                        <li><strong>999</strong>- Emergenza</li>
+                        <li><strong>101</strong>- Numero polizia</li>
+                        <li><strong>111</strong>- Numero assistenza medica</li>
+                    </ul>
+                </li>
+                <li>
+                    Hotel
+                    <ul>
+                        <li><strong>Nome hotel:</strong>Buckingham Palace</li>
+                        <li><strong>Indirizzo hotel</strong>Westminster, London SW1A 1AA, Regno Unito</li>
+                    </ul>
+                </li>
+                <li>
+                    Aereo
+                    <ul>
+                        <li><strong>Volo di Andata:</strong>YI234X, ore 9.30 da Milano Malpensa</li>
+                        <li><strong>Volo di Ritorno:</strong>YI236X, ore 18.30 da London Heathrow</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section>
+            <!--5^ e ultima SECTION con titoletto + 2 foto-->
+            <img src="https://www.abta.com/sites/default/files/styles/large/public/media/uploads/london-400x400-compressor_0.jpg"
+                alt="foto Millennium Bridge">
+            <img src="https://pokerstarscareers.com/wp-content/uploads/2020/01/London-Wider-Area-e1597319992670-400x400.jpg"
+                alt="foto Borough Market">
+
+        </section>
     </main>
 
-    <footer></footer>
+    <footer>The 1st html page powered with &#128420; by nicosanji !!!</footer>
 </body>
 
 </html>
